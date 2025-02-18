@@ -1,0 +1,26 @@
+body {
+    background-color: slateblue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* vw is for viewport width and vh is for viewport height */
+    height: 100vh;
+}
+
+#btn {
+    margin-top: 20px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: slategray;
+    margin-top: 20px;
+}
