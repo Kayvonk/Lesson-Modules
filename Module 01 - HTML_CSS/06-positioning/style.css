@@ -68,6 +68,8 @@ footer {
   margin-bottom: 50px;
   cursor: pointer;
   transition: scale 0.5s ease-in-out;
+  height: 300px;
+  position: relative;
 }
 
 .card:first-child {
@@ -85,4 +87,24 @@ footer {
 
 .card img {
   width: 300px;
+}
+
+.overlay {
+  position: absolute;
+  display: none;
+  width: 300px;
+  height: 300px;
+  background: #3333336e;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay > p {
+color: white;
+font-size: large;
+}
+
+.card:hover .overlay{
+  display: flex;
 }

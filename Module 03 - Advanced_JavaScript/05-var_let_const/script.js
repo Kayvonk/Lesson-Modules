@@ -28,4 +28,3 @@ function squareNumber() {
 const numSquared = squareNumber()
 console.log(numSquared);
 
-

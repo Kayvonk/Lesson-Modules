@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="color">Favorite Color:</label>
+          <select id="color" name="color">
+            <option value="" disabled selected>Select a color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="purple">Purple</option>
+          </select>
+
+          <div id="hobbiesContainer">
+            <label>Hobbies:</label>
+            <div class="formGroup">
+              <label for="reading">Reading</label>
+              <input
+                type="checkbox"
+                id="reading"
+                name="hobbies"
+                value="reading"
+              />
+            </div>
+            <div class="formGroup">
+              <label for="gaming">Gaming</label>
+              <input
+                type="checkbox"
+                id="gaming"
+                name="hobbies"
+                value="gaming"
+              />
+            </div>
+            <div class="formGroup">
+              <label for="sports">Sports</label>
+              <input
+                type="checkbox"
+                id="sports"
+                name="hobbies"
+                value="sports"
+              />
+            </div>
+            <div class="formGroup">
+              <label for="music">Music</label>
+              <input type="checkbox" id="music" name="hobbies" value="music" />
+            </div>
+            <div class="formGroup">
+              <label for="art">Art</label>
+              <input type="checkbox" id="art" name="hobbies" value="art" />
+            </div>
+            <div class="formGroup">
+              <label for="movies">Movies</label>
+              <input
+                type="checkbox"
+                id="movies"
+                name="hobbies"
+                value="movies"
+              />
+            </div>
+          </div>
+          <div id="newsletterContainer">
+            <label>Would you like to subscribe to our weekly newsletter?</label>
+            <div class="formGroup">
+              <input
+                type="radio"
+                id="subscribeYes"
+                name="newsletter"
+                value="yes"
+              />
+              <label for="subscribeYes">Yes</label>
+            </div>
+            <div class="formGroup">
+              <input
+                type="radio"
+                id="subscribeNo"
+                name="newsletter"
+                value="no"
+              />
+              <label for="subscribeNo">No</label>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

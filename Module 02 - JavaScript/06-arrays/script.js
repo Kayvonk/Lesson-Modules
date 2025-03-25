@@ -23,7 +23,7 @@ var arrayOfBooleans = [true, false, true]
 console.log(arrayOfMovies[0]);
 
 // .length tells us how many items are in the array
-// console.log(arrayOfMovies.length);
+console.log(arrayOfMovies.length);
 
 
 
