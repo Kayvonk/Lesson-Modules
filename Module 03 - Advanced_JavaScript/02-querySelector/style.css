@@ -1,28 +1,22 @@
 body {
-    background-color: slateblue;
+  background-color: slateblue;
 }
 
 main {
-    /* display flex turns the element selected into a flexbox container */
-    display: flex;
-    /* the flex-direction property can shift a flexbox container from row orientation to column orientation */
-    flex-direction: column;
-    /* justify-content can be used to center child elements horizontally */
-    justify-content: center;
-    /* align-items can be used to center child elements vertically */
-    align-items: center;
-    /* vw is for viewport width and vh is for viewport height */
-    /* setting height to 100vh gives the element a height that takes up 100% of the page */
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #btn {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .result {
-    width: 300px;
-    height: 100px;
-    background-color: slategray;
-    margin-top: 20px;
+  width: 300px;
+  height: 100px;
+  background-color: slategray;
+  margin-top: 20px;
 }

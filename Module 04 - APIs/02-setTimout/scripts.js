@@ -12,3 +12,7 @@ function showMessage() {
     answerEl.style.display = "flex";
   }, 500);
 }
+
+// setTimeout(() => {
+//   console.log("Hello World");
+// }, 5000);

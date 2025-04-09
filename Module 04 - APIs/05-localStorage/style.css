@@ -17,7 +17,7 @@ section {
   min-height: 50%;
   display: flex;
   flex-direction: column;
- align-items: center;
+  align-items: center;
   background: lightblue;
   padding: 50px;
   box-sizing: border-box;
@@ -96,7 +96,7 @@ button:hover {
   position: relative;
   width: 60px;
   height: 30px;
-  background: #007AFF;
+  background: #007aff;
   border-radius: 15px;
   cursor: pointer;
   align-self: flex-end;
@@ -113,9 +113,11 @@ button:hover {
   transform: translateY(-50%);
   transition: 0.3s;
 }
+
 .active {
-  background: #BB86FC;
+  background: #bb86fc;
 }
+
 .active .slider {
   left: 35px;
 }

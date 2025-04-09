@@ -10,7 +10,11 @@ function startCountdown() {
     cardEl.textContent = count;
   }
   let timer = setInterval(() => {
-    count--;
-    cardEl.textContent = count;
+    if (count > 0) {
+      count--;
+      cardEl.textContent = count;
+    } else {
+      clearInterval(timer);
+    }
   }, 1000);
 }

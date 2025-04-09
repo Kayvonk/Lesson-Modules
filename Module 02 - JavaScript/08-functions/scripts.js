@@ -15,17 +15,15 @@ logHello();
 logHello();
 
 // Passing data into a function
-// function addNumbers (num1, num2) {
-// // var num1 = 2
-// // var num2 = 3
+function addNumbers (num1, num2) {
 
-// var total = num1 + num2
-//     return total
-// }
+var total = num1 + num2
+    return total
+}
 
-// var addition = addNumbers(1, 2)
+var addition = addNumbers(1, 2)
 
-// console.log(addition);
+console.log(addition);
 
 // var addition2 = addNumbers(100, 200)
 
@@ -38,7 +36,7 @@ logHello();
 
 // Syntax for an arrow function
 
-// 1. starts with open and closed paranthesis 
+// 1. starts with open and closed paranthesis
 // 2. followed by an arrow =>
 // 3. followed by curly brackets
 // 4. the code to execute goes in the curly brackets
@@ -47,5 +45,4 @@ var myArrowFunction = () => {
   console.log("Code to execute");
 };
 
-
-myArrowFunction()
+myArrowFunction();

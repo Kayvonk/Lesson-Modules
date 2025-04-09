@@ -4,6 +4,8 @@ var listOfLetters = ["a", "b", "c"];
 
 var concatArr = listOfNumbers.concat(listOfLetters);
 
+var concatArr = [...listOfNumbers, ...listOfLetters];
+
 console.log(concatArr);
 
 var newArr = [...listOfNumbers, 9];
@@ -14,7 +16,7 @@ const newObject = {
 };
 
 // Option 1
-newObject.isActive = true
+newObject.isActive = true;
 
 // Option 2
 var modifiedObject = { ...newObject, isActive: false };

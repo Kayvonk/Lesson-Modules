@@ -63,16 +63,15 @@ main img {
 }
 
 section {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #bioSection > p {
-width: 50%;
-text-align: justify;
+  width: 50%;
+  text-align: justify;
 }
-
 
 footer {
   width: 100%;

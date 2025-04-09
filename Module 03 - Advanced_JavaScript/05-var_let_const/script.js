@@ -8,10 +8,10 @@ console.log(firstName);
 
 // a variable set with let can be reassigned but cannot be redeclared
 
-let movie = "Spirited Away"
+let movie = "Spirited Away";
 console.log(movie);
 
-movie = "Princess Mononoke"
+movie = "Princess Mononoke";
 console.log(movie);
 
 // a variable set with const can not be reassigned or redeclared
@@ -24,7 +24,5 @@ function squareNumber() {
   return num * num;
 }
 
-
-const numSquared = squareNumber()
+const numSquared = squareNumber();
 console.log(numSquared);
-

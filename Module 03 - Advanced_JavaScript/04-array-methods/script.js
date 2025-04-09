@@ -1,7 +1,6 @@
 // this variable is the type of array
 var listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
-
 // the includes method evalutes to a boolean (true or false)
 var includesBoolean = listOfNumbers.includes(4);
 
@@ -15,10 +14,9 @@ listOfNumbers.push(10);
 listOfNumbers.pop();
 // console.log(listOfNumbers);
 
-
 // bonus methods
 
-// Syntax for the filter/map methods
+// Syntax for the filter/map/find methods
 // 1. state the initial array
 // 2. use .filter() or .map()
 // 3. callback function inside of the paranthesis
@@ -30,7 +28,7 @@ var restructuredArray = listOfNumbers.map((number, index) => {
   return number;
 });
 
-// console.log(restructuredArray);
+console.log(restructuredArray);
 
 // the filter method produces a new array based on the callback function
 var filteredNumbers = listOfNumbers.filter((element) => element > 5);

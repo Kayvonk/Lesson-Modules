@@ -1,18 +1,16 @@
-
 // this variable has the type of string
 
-var firstName = "Linda"
+var firstName = "Linda";
 
-var lastName = "Smith"
+var lastName = "Smith";
 
 console.log(typeof firstName);
 
 console.log(firstName, lastName);
 
-
 // this variable has the type of number
 
-var num = 3000
+var num = 3000;
 
 console.log(typeof num);
 
@@ -23,7 +21,8 @@ console.log(num + num);
 
 // this variable is type boolean
 // the two possible values for a boolean is true or false
-var bool = true
+var bool = true;
 
-console.log(typeof bool)
+console.log(typeof bool);
 
+var loggedIn = false;

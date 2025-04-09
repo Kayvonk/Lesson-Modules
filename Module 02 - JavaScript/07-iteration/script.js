@@ -4,7 +4,7 @@ var arrayOfMovies = [
   "Spiderman",
   "Up",
   "Batman",
-  "Toy Story"
+  "Toy Story",
 ];
 
 // The long way of logging each movie
@@ -33,7 +33,6 @@ var arrayOfMovies = [
 
 // console logs the length of the movies array
 console.log(arrayOfMovies.length);
-
 
 for (var index = 0; index < arrayOfMovies.length; index++) {
   console.log(arrayOfMovies[index]);
