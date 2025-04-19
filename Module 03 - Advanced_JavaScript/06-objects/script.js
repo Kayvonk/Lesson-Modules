@@ -9,3 +9,10 @@ const personObject = {
 };
 
 console.log(personObject.name);
+
+// Object destructing allows us to declare variables using the key-value pairs of an object
+
+const {name, age} = personObject
+
+console.log(age);
+

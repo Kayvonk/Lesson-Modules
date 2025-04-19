@@ -41,3 +41,22 @@ var matchingNumber = listOfNumbers.find((element) => element > 5);
 
 // console.log(matchingNumber);
 // expected output: 6
+
+// More bonus methods!
+
+// the splice method
+// .splice(startIndex, numberToRemove, item1, item2, ...)
+// Modifies the original array by removing or replacing existing elements and/or adding new ones
+
+// Example: remove 2 elements starting at index 1 and insert 99 and 100
+listOfNumbers.splice(1, 2, 99, 100);
+console.log("After splice:", listOfNumbers);
+// expected output: [1, 2, 99, 100, 5, 6, 7, 8]
+
+// the slice method
+// .slice(startIndex, endIndex)
+// Returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)
+
+var slicedArray = listOfNumbers.slice(1, 4);
+console.log("Sliced array:", slicedArray);
+// expected output: [2, 99, 100]
