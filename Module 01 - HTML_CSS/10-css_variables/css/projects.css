@@ -1,53 +1,35 @@
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  height: 4rem;
-  background-color: #55a0aa;
-  display: flex;
-  justify-content: flex-end;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
+/* Override shared navLinks for projects page layout */
 .navLinks {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 16rem;
-  margin-right: 3rem;
+  gap: 0;
   font-size: 1.25rem;
 }
 
-.link {
-  color: black;
-  text-decoration: none;
+.link:hover {
+  cursor: pointer;
 }
 
-.link:hover {
-  color: #cc0eee;
-  cursor: pointer;
+body {
+  position: relative;
 }
 
 main {
   width: 100%;
   flex: 1;
-  background-color: #bbb;
+  background-color: var(--color-bg-light);
   display: flex;
+  flex-direction: row;
+  align-items: unset;
+  gap: 0;
+  padding-top: 0;
 }
 
 aside {
   width: 30%;
-  background-color: #333;
-  margin-top: 4rem;
+  background-color: var(--color-bg-dark);
+  margin-top: var(--nav-height);
 }
 
 section {
@@ -56,13 +38,11 @@ section {
   align-items: flex-start;
   width: 70%;
   padding: 3rem;
-  margin-top: 4rem;
+  margin-top: var(--nav-height);
 }
 
 footer {
-  height: 5rem;
-  background-color: #222;
-  box-shadow: 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow-up);
 }
 
 .cardContainer {
@@ -75,7 +55,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow-default);
   margin-bottom: 3rem;
   cursor: pointer;
   transition: scale 0.5s ease-in-out;

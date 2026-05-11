@@ -1,0 +1,100 @@
+:root {
+  --color-bg-dark: #333;
+  --color-bg-light: #bbb;
+  --color-primary: #55a0aa;
+  --color-hover: #cc0eee;
+  --color-footer: #222;
+  --color-btn: #c0b2a0;
+  --color-btn-hover: #74c76d;
+
+  --font-weight-bold: 600;
+  --letter-spacing: 0.0625rem;
+
+  --nav-height: 4rem;
+  --footer-height: 5rem;
+
+  --box-shadow-default: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  --box-shadow-up: 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  --box-shadow-button: 0 0 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   SHARED BASE
+========================= */
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-dark);
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: var(--box-shadow-default);
+  z-index: 10;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  margin-right: 3rem;
+  font-size: 1.25rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing);
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: var(--color-hover);
+}
+
+footer {
+  height: var(--footer-height);
+  background-color: var(--color-footer);
+  box-shadow: var(--box-shadow-up);
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+main {
+  flex: 1;
+  padding-top: 6rem;
+  background-color: var(--color-bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.heroImage img {
+  width: 18rem;
+  display: block;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}

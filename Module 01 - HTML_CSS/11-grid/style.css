@@ -3,24 +3,36 @@
   --color-bg-light: #bbb;
   --color-footer: #222;
   --color-primary: #55a0aa;
-  --nav-height: 70px;
-  --footer-height: 80px;
+
+  --nav-height: 4rem;
+  --footer-height: 5rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: system-ui, sans-serif;
   background-color: var(--color-bg-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* NAV */
 nav {
   width: 100%;
   height: var(--nav-height);
   background-color: var(--color-primary);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
+/* MAIN LAYOUT */
 main {
   width: 100%;
-  min-height: calc(100vh - var(--nav-height) - var(--footer-height));
+  flex: 1;
   background-color: var(--color-bg-light);
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -30,24 +42,31 @@ aside {
   background-color: var(--color-bg-dark);
 }
 
-section {
+/* CENTER AREA */
+main > section {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
+/* GRID COLLAGE */
 .grid-collage {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 150px;
+  grid-auto-rows: 9.375rem; /* 150px */
   width: 100%;
-  max-width: 1000px;
+  max-width: 62.5rem; /* 1000px */
+  gap: 1rem;
 }
 
+/* GRID ITEM */
 .grid-item {
-  display: flex;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
+/* IMAGE */
 .grid-item img {
   width: 100%;
   height: 100%;
@@ -55,7 +74,7 @@ section {
   display: block;
 }
 
-/* Grid Spanning */
+/* GRID SPANS */
 .span-4x1 {
   grid-column: span 4;
   grid-row: span 1;
@@ -64,6 +83,11 @@ section {
 .span-1x4 {
   grid-column: span 1;
   grid-row: span 4;
+}
+
+.span-3x2 {
+  grid-column: span 3;
+  grid-row: span 2;
 }
 
 .span-2x2 {
@@ -76,23 +100,10 @@ section {
   grid-row: span 2;
 }
 
-.span-3x2 {
-  grid-column: span 3;
-  grid-row: span 2;
-}
-
+/* FOOTER */
 footer {
   width: 100%;
   height: var(--footer-height);
   background-color: var(--color-footer);
-}
-
-/* Remove default spacing */
-* {
-  box-sizing: border-box;
-}
-
-.grid-collage,
-.grid-item {
-  gap: 0;
+  box-shadow: 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
