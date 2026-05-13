@@ -1,3 +1,8 @@
+html,
+body {
+  margin: 0;
+}
+
 body {
   margin: 0;
   background-color: #333;
@@ -57,12 +62,12 @@ main {
   flex: 1;
   background-color: #bbb;
   box-sizing: border-box;
-  padding-block: 7.5rem;
+  padding-block: 8rem;
 }
 
 main img {
-  width: 18.75rem;
-  margin: 1.875rem 0;
+  width: 20rem;
+  margin: 2rem 0;
 }
 
 section {

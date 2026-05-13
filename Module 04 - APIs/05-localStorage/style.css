@@ -1,12 +1,19 @@
+html,
+body {
+  margin: 0;
+}
+
 body {
   margin: 0;
   background-color: #333;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   width: 100%;
-  height: 100%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,14 +21,13 @@ main {
 
 section {
   width: 70%;
-  min-height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: lightblue;
-  padding: 50px;
+  padding: 3rem;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 0.5rem;
 }
 
 form {
@@ -29,24 +35,24 @@ form {
   flex-direction: column;
   width: 70%;
   background-color: #fafafa;
-  padding: 50px;
+  padding: 3rem;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 0.5rem;
 }
 
 #name,
 #color {
   width: 100%;
-  margin: 10px 0 30px 0;
-  padding: 10px 20px;
+  margin: 0.5rem 0 2rem 0;
+  padding: 0.5rem 1.25rem;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   border: 2px solid lightblue;
 }
 
 input:focus {
   outline: none;
-  box-shadow: 0 0 5px lightblue;
+  box-shadow: 0 0 0.25rem lightblue;
 }
 
 input:focus-visible {
@@ -56,7 +62,7 @@ input:focus-visible {
 .formGroup {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 0.5rem 0;
 }
 
 label {
@@ -64,19 +70,19 @@ label {
 }
 
 .formGroup label {
-  min-width: 100px;
+  min-width: 6rem;
   font-weight: normal;
 }
 
 .formGroup input {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 button {
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
   border: none;
-  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   background-color: #f2f2f2;
   cursor: pointer;
 }
@@ -87,17 +93,17 @@ button:hover {
 
 #hobbiesContainer,
 #newsletterContainer {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* ----------------slider------------------ */
 
 .slider-container {
   position: relative;
-  width: 60px;
-  height: 30px;
+  width: 4rem;
+  height: 2rem;
   background: #007aff;
-  border-radius: 15px;
+  border-radius: 1rem;
   cursor: pointer;
   align-self: flex-end;
 }
@@ -105,9 +111,9 @@ button:hover {
 .slider {
   position: absolute;
   top: 50%;
-  left: 5px;
-  width: 20px;
-  height: 20px;
+  left: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background: white;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -119,5 +125,5 @@ button:hover {
 }
 
 .active .slider {
-  left: 35px;
+  left: 2.25rem;
 }

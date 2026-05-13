@@ -49,11 +49,11 @@ footer {
   box-shadow: var(--box-shadow-default);
   margin-bottom: 3rem;
   cursor: pointer;
-  transition: scale 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .card:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .title {

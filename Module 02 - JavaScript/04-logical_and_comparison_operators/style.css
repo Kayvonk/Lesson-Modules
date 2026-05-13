@@ -1,4 +1,9 @@
+html,
 body {
-  background-color: #333333;
   margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #333333;
 }
