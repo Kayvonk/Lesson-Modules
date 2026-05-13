@@ -1,5 +1,5 @@
-/* Override shared navLinks for projects page layout */
-.navLinks {
+/* Override shared nav-links for projects page layout */
+.nav-links {
   align-items: center;
   justify-content: space-between;
   width: 16rem;
@@ -23,7 +23,7 @@ main {
   flex-direction: row;
   align-items: unset;
   gap: 0;
-  padding-top: 0;
+  padding-block: 0;
 }
 
 aside {
@@ -45,7 +45,7 @@ footer {
   box-shadow: var(--box-shadow-up);
 }
 
-.cardContainer {
+.card-container {
   width: 100%;
   padding: 1.25rem;
   box-sizing: border-box;
@@ -76,14 +76,14 @@ footer {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .cardContainer {
+  .card-container {
     width: 50%;
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-  .cardContainer {
+  .card-container {
     width: 33%;
   }
 }

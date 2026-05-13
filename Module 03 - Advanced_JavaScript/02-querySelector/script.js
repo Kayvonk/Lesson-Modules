@@ -1,4 +1,5 @@
 // We use document.getElementById to target an element with the specified id
+// We use document.getElementById to target an element with the specified id
 let button = document.getElementById('btn')
 let userInput = document.getElementById('name-input')
 // To target an element with a specific class, we can use document.querySelector

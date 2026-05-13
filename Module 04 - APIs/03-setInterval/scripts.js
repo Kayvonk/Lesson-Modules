@@ -1,4 +1,4 @@
-const startBtn = document.getElementById("startBtn");
+const startBtn = document.getElementById("start-btn");
 const cardEl = document.querySelector(".card");
 
 startBtn.addEventListener("click", startCountdown);

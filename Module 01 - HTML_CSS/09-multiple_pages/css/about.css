@@ -25,7 +25,7 @@ nav {
   z-index: 1;
 }
 
-.navLinks {
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,7 +56,7 @@ main {
   flex: 1;
   background-color: #bbb;
   box-sizing: border-box;
-  padding-top: 7.5rem;
+  padding-block: 7.5rem;
 }
 
 main img {
@@ -70,7 +70,7 @@ section {
   align-items: center;
 }
 
-#bioSection > p {
+#bio-section > p {
   width: 50%;
   text-align: justify;
 }

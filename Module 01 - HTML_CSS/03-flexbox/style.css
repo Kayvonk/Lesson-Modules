@@ -27,7 +27,7 @@ section {
   align-items: center;
 }
 
-.cardContainer {
+.card-container {
   width: 50%;
   padding: 1.25rem;
   box-sizing: border-box;
