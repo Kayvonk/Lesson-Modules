@@ -94,6 +94,8 @@ footer {
   width: 100%;
 }
 
+/* Option 1 */
+
 /* Tablet */
 @media (width >= 768px) {
   .card-container {
@@ -103,9 +105,23 @@ footer {
 /* Desktop */
 @media (width >= 1200px) {
   .card-container {
-    width: 33%;
+    width: calc(100% / 3);
   }
 }
+
+/* Option 2 */
+
+/* @media screen and (min-width: 768px) {
+  .card-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-container {
+    width: calc(100% / 3);
+  }
+} */
 
 
 
