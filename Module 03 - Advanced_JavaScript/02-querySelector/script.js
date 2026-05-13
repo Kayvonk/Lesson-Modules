@@ -8,11 +8,14 @@ btnAll.addEventListener('click', handleAll)
 function handleOne() {
     // querySelector returns the first matching element
     let item = document.querySelector('.list-item')
-    result.textContent = item.textContent
+    console.log(item);
+    item.style.backgroundColor = "lightblue";
+    
 }
 
 function handleAll() {
     // querySelectorAll returns all matching elements as a NodeList
     let items = document.querySelectorAll('.list-item')
-    result.textContent = items.length + ' items found'
+    console.log(items);
+    console.log(items.length + ' items found');
 }
