@@ -1,16 +1,18 @@
-// We use document.getElementById to target an element with the specified id
-// We use document.getElementById to target an element with the specified id
-let button = document.getElementById('btn')
-let userInput = document.getElementById('name-input')
-// To target an element with a specific class, we can use document.querySelector
-// Notice that we use the period before the class name when using querySelector
+let btnOne = document.getElementById('btn-one')
+let btnAll = document.getElementById('btn-all')
 let result = document.querySelector('.result')
 
+btnOne.addEventListener('click', handleOne)
+btnAll.addEventListener('click', handleAll)
 
-button.addEventListener("click", handleClick)
-
-function handleClick() {
-    // The value property can be used to get the current value of an input element
-    console.log(userInput.value); 
+function handleOne() {
+    // querySelector returns the first matching element
+    let item = document.querySelector('.list-item')
+    result.textContent = item.textContent
 }
 
+function handleAll() {
+    // querySelectorAll returns all matching elements as a NodeList
+    let items = document.querySelectorAll('.list-item')
+    result.textContent = items.length + ' items found'
+}

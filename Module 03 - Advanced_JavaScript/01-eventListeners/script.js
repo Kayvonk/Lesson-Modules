@@ -1,5 +1,5 @@
 var buttonElement = document.getElementById("btn")
-var inputElement = document.getElementById("userInput")
+var inputElement = document.getElementById("user-input")
 
 console.log(document.body);
 

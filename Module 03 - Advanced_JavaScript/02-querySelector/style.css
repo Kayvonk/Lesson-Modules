@@ -10,8 +10,27 @@ main {
   height: 100vh;
 }
 
-#btn {
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+#btn-one,
+#btn-all {
   margin-top: 20px;
+}
+
+#btn-all {
+  margin-left: 10px;
 }
 
 .result {
@@ -19,4 +38,9 @@ main {
   height: 100px;
   background-color: slategray;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
 }

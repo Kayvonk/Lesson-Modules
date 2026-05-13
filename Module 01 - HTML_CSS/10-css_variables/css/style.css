@@ -7,6 +7,7 @@
   --color-btn: #c0b2a0;
   --color-btn-hover: #74c76d;
 
+  --font-family: system-ui, sans-serif;
   --font-weight-bold: 600;
   --letter-spacing: 0.0625rem;
 
@@ -25,7 +26,7 @@
 body {
   margin: 0;
   background-color: var(--color-bg-dark);
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-family);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
